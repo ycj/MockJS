@@ -31,7 +31,7 @@
   },
   "main": "./dist/mock.js",
   "scripts": {
-    "build": "gulp hello",
+    "build": "gulp webpack",
     "test": "gulp mocha",
     "coveralls": "gulp coveralls"
   },

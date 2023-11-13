@@ -1,15 +1,15 @@
 {
-  "name": "mockjs",
+  "name": "@hylink/mockjs",
   "title": "Mock.js",
-  "description": "生成随机数据 & 拦截 Ajax 请求",
-  "version": "1.0.1-beta3",
+  "description": "添加车辆号牌模拟",
+  "version": "1.0.1",
   "homepage": "http://mockjs.com/",
   "keywords": [
     "mock",
     "mockJSON",
     "mockAjax"
   ],
-  "author": "nuysoft@gmail.com",
+  "author": "yuanchangjun@gmail.com",
   "dependencies": {
     "commander": "*"
   },
@@ -26,11 +26,12 @@
     "webpack": "^1.12.9"
   },
   "repository": {
-    "type": "git",
-    "url": "git://github.com/nuysoft/Mock.git"
+    "type": "https",
+    "url": "https://github.com/ycj/MockJS.git"
   },
   "main": "./dist/mock.js",
   "scripts": {
+    "build": "gulp hello",
     "test": "gulp mocha",
     "coveralls": "gulp coveralls"
   },
@@ -40,7 +41,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/nuysoft/Mock/blob/master/LICENSE"
+      "url": "https://github.com/ycj/MockJS/blob/master/LICENSE"
     }
   ],
   "spm": {

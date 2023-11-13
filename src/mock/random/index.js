@@ -20,5 +20,6 @@ Random.extend(require('./web'))
 Random.extend(require('./address'))
 Random.extend(require('./helper'))
 Random.extend(require('./misc'))
+Random.extend(require('./license_plate_number'))
 
 module.exports = Random

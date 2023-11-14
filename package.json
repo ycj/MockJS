@@ -1,7 +1,7 @@
 {
   "name": "@hylink/mockjs",
   "title": "Mock.js",
-  "description": "添加车辆号牌模拟",
+  "description": "JSON数据模拟",
   "version": "1.0.1",
   "homepage": "http://mockjs.com/",
   "keywords": [

@@ -24,7 +24,7 @@ module.exports = {
     //随机生成中国车辆号牌
     clpn: function(){
         let province = this.pick(lpn_province);
-        let city_code = lpn_city.get(province)? this.pick(lpn_city.get(province)) : this.pick(lpn_city_default);
+        let city_code = province in lpn_city? this.pick(lpn_city[province]) : this.pick(lpn_city_default);
         let number = '';
         for (let i=0;i<5;i++){
             number += this.pick(lpn_number);

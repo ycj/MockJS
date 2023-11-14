@@ -29,3 +29,8 @@ Make sure the problem you're addressing is reproducible. Use <http://jsbin.com/>
 
 ## License
 Mock.js is available under the terms of the [MIT License](./LICENSE).
+
+## change log
+
+### 1.0.1
+扩展mock.js功能，增加`@clpn`中国车牌模拟功能

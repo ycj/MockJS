@@ -11,19 +11,17 @@
   ],
   "author": "yuanchangjun@gmail.com",
   "dependencies": {
+    "canvas": "^2.11.2",
     "commander": "*"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-connect": "^5.7.0",
-    "gulp-coveralls": "^0.1.4",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-jshint": "^2.1.0",
-    "gulp-mocha": "^2.2.0",
-    "gulp-mocha-phantomjs": "^0.10.1",
+    "chai": "^4.3.10",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
-    "webpack": "^1.12.9"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "repository": {
     "type": "https",
@@ -31,8 +29,8 @@
   },
   "main": "./dist/mock.js",
   "scripts": {
-    "build": "gulp webpack",
-    "test": "gulp mocha",
+    "build": "webpack",
+    "test": "mocha",
     "coveralls": "gulp coveralls"
   },
   "bin": {

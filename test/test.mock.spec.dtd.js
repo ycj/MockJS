@@ -24,7 +24,7 @@
         75 / 2 < medium < 75
         fast < 75 / 2
  */
-var expect = chai.expect
+var expect = require('chai').expect
 var Mock, $, _
 
 describe('DTD', function() {

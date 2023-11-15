@@ -2,21 +2,20 @@
 /* global window */
 // 数据占位符定义（Data Placeholder Definition，DPD）
 var expect = require('chai').expect
-var Mock, Random, $, _, Random
+var Mock, Random, $, _
 
 /* jshint -W061 */
 describe('Random', function() {
     before(function(done) {
-        require(['mock', 'underscore', 'jquery'], function() {
-            Mock = arguments[0]
-            window.Random = Random = Mock.Random
-            _ = arguments[1]
-            $ = arguments[2]
-            expect(Mock).to.not.equal(undefined)
-            expect(_).to.not.equal(undefined)
-            expect($).to.not.equal(undefined)
-            done()
-        })
+        Mock = require('../dist/mock')
+        _    = require('underscore')
+        $    = require('jquery')
+        Random = Mock.Random
+        expect(Mock).to.not.equal(undefined)
+        expect(_).to.not.equal(undefined)
+        expect($).to.not.equal(undefined)
+        expect(Random).to.not.equal(undefined)
+        done()
     })
 
     function stringify(json) {

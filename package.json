@@ -11,7 +11,6 @@
   ],
   "author": "yuanchangjun@gmail.com",
   "dependencies": {
-    "canvas": "^2.11.2",
     "commander": "*"
   },
   "devDependencies": {

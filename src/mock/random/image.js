@@ -2,6 +2,9 @@
 /*
     ## Image
 */
+// const Canvas = require('canvas').Canvas
+
+
 module.exports = {
     // 常见的广告宽高
     _adSize: [
@@ -239,17 +242,6 @@ module.exports = {
         if (typeof document !== 'undefined') {
             canvas = document.createElement('canvas')
         } else {
-            /*
-                https://github.com/Automattic/node-canvas
-                    npm install canvas --save
-                安装问题：
-                * http://stackoverflow.com/questions/22953206/gulp-issues-with-cario-install-command-not-found-when-trying-to-installing-canva
-                * https://github.com/Automattic/node-canvas/issues/415
-                * https://github.com/Automattic/node-canvas/wiki/_pages
-
-                PS：node-canvas 的安装过程实在是太繁琐了，所以不放入 package.json 的 dependencies。
-             */
-            var Canvas = module.require('canvas')
             canvas = new Canvas()
         }
 

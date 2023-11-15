@@ -1,5 +1,8 @@
 /* global require, chai, describe, before, it */
 /* global window */
+
+const { readyException } = require('jquery')
+
 // 数据占位符定义（Data Placeholder Definition，DPD）
 var expect = require('chai').expect
 var Mock, Random, $, _
@@ -216,26 +219,31 @@ describe('Random', function() {
         })
     })
 
-    describe('Image', function() {
-        doit('Random.image()', function(data) {
-            expect(data).to.be.ok
-        })
-        it('Random.dataImage()', function() {
-            var data = eval(this.test.title)
-            expect(data).to.be.ok
-            this.test.title = stringify(this.test.title) + ' => '
-        })
-        it('Random.dataImage("200x100")', function() {
-            var data = eval(this.test.title)
-            expect(data).to.be.ok
-            this.test.title = stringify(this.test.title) + ' => '
-        })
-        it('Random.dataImage("200x100", "Hello Mock.js!")', function() {
-            var data = eval(this.test.title)
-            expect(data).to.be.ok
-            this.test.title = stringify(this.test.title) + ' => '
-        })
-    })
+    // describe('Image', function() {
+    //     before(function(done) {
+    //         const Canvas = require('canvas').Canvas
+    //         except(Canvas).to.not.equal(undefined)
+    //         done()
+    //     })
+    //     doit('Random.image()', function(data) {
+    //         expect(data).to.be.ok
+    //     })
+    //     it('Random.dataImage()', function() {
+    //         var data = eval(this.test.title)
+    //         expect(data).to.be.ok
+    //         this.test.title = stringify(this.test.title) + ' => '
+    //     })
+    //     it('Random.dataImage("200x100")', function() {
+    //         var data = eval(this.test.title)
+    //         expect(data).to.be.ok
+    //         this.test.title = stringify(this.test.title) + ' => '
+    //     })
+    //     it('Random.dataImage("200x100", "Hello Mock.js!")', function() {
+    //         var data = eval(this.test.title)
+    //         expect(data).to.be.ok
+    //         this.test.title = stringify(this.test.title) + ' => '
+    //     })
+    // })
 
     var RE_COLOR = /^#[0-9a-fA-F]{6}$/
     var RE_COLOR_RGB = /^rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)$/
@@ -394,6 +402,11 @@ describe('Random', function() {
             expect(data).to.be.ok
         })
         doit('Random.zip()', function(data) {
+            expect(data).to.be.ok
+        })
+    })
+    describe('中国车牌', function() {
+        doit('Random.clpn()', function(data) {
             expect(data).to.be.ok
         })
     })

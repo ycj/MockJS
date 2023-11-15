@@ -12,7 +12,7 @@ var Random = {
 
 Random.extend(require('./basic'))
 Random.extend(require('./date'))
-Random.extend(require('./image'))
+// Random.extend(require('./image'))
 Random.extend(require('./color'))
 Random.extend(require('./text'))
 Random.extend(require('./name'))

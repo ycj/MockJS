@@ -6,16 +6,14 @@ var Mock, $, _
 
 describe('Schema', function() {
     before(function(done) {
-        require(['mock', 'underscore', 'jquery'], function() {
-            Mock = arguments[0]
-            window.XMLHttpRequest = Mock.XHR
-            _ = arguments[1]
-            $ = arguments[2]
-            expect(Mock).to.not.equal(undefined)
-            expect(_).to.not.equal(undefined)
-            expect($).to.not.equal(undefined)
-            done()
-        })
+        Mock = require('../dist/mock')
+        _    = require('underscore')
+        $    = require('jquery')
+        // window.XMLHttpRequest = Mock.XHR
+        expect(Mock).to.not.equal(undefined)
+        expect(_).to.not.equal(undefined)
+        expect($).to.not.equal(undefined)
+        done()
     })
 
     function stringify(json) {

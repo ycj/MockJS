@@ -2,7 +2,7 @@
   "name": "@hylink/mockjs",
   "title": "Mock.js",
   "description": "JSON数据模拟",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "http://mockjs.com/",
   "keywords": [
     "mock",
@@ -31,8 +31,7 @@
   "main": "./dist/mock.js",
   "scripts": {
     "build": "webpack",
-    "test": "mocha",
-    "coveralls": "gulp coveralls"
+    "test": "mocha"
   },
   "bin": {
     "random": "bin/random"

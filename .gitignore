@@ -8,3 +8,4 @@ coverage
 PLAN.md
 npm-debug.log
 dist
+.nyc_output

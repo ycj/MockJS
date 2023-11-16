@@ -1,0 +1,16 @@
+#include
+!dist
+!bin
+
+#exclude
+.nyc_output
+.github
+src
+test
+.editorconfig
+.gitattributes
+.jshintrc
+webpack.config.js
+coverage
+*.tgz
+

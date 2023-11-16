@@ -34,3 +34,9 @@ Mock.js is available under the terms of the [MIT License](./LICENSE).
 
 ### 1.0.1
 扩展mock.js功能，增加`@clpn`中国车牌模拟功能
+
+### 1.0.2
+移除过时的glup工具链
+
+### 1.0.3
+修复入口文件错误

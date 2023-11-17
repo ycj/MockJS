@@ -4,6 +4,7 @@
   "description": "JSON数据模拟",
   "version": "1.0.5",
   "homepage": "http://mockjs.com/",
+  "license": "MIT",
   "keywords": [
     "mock",
     "mockjs"
@@ -35,12 +36,6 @@
   "bin": {
     "random": "bin/random"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/ycj/MockJS/blob/master/LICENSE"
-    }
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
